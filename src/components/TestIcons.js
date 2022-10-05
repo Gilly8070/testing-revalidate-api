@@ -11,7 +11,7 @@ const TestIcons = () => {
         }, 2000)
     }
     let text = encodeURIComponent('HEy There!')
-    let copyUrl = `https://portfolio-site-rho-self.vercel.app/`
+    let copyUrl = `https://legendary-gnome-12ddb6.netlify.app/`
     return (
         <div className='d-flex align-items-center email-link-cont email-link-cont-selected'>
             <div className='mr-1'>
