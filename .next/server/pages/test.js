@@ -1,94 +1,45 @@
 "use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 378;
-exports.ids = [378];
+exports.id = "pages/test";
+exports.ids = ["pages/test"];
 exports.modules = {
 
-/***/ 344:
+/***/ "./pages/test.js":
+/*!***********************!*\
+  !*** ./pages/test.js ***!
+  \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-
-
-const Test = ({ data , time  })=>{
-    const func = async ()=>{
-        const res = await fetch(`/api/revalidate/myagency?rxveohyjwptnzkb`);
-        console.log(res, "console.log", "res", data);
-    };
-    console.log(time, "time data", "console.log");
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        children: [
-            time + "hello",
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                onClick: ()=>func(),
-                children: "revalidate"
-            })
-        ]
-    });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Test);
-// export async function getStaticPaths() {
-//     const paths = [];
-//     return {
-//         paths: paths,
-//         fallback: "blocking",
-//     };
-// }
-const getStaticProps = async (context)=>{
-    var ref, ref1, ref2, ref3;
-    let siteName = "myagency";
-    const baseurl = "https://testapikube.lineupx.com/";
-    // fetch profile information for given site name
-    const profileData = await fetch(`${baseurl}RecruiterV2/Profile/GET/GetAgencyByDomainName?site_name=${siteName}`).then((res)=>{
-        return res === null || res === void 0 ? void 0 : res.json();
-    });
-    // fetch pricing data for job board
-    let dev = (process === null || process === void 0 ? void 0 : (ref = process.env) === null || ref === void 0 ? void 0 : "production") === "development" ? "http://localhost:5004" : "https://test.lineupx.com";
-    const res = await fetch(dev + `/api/pricing/${(ref1 = profileData.result) === null || ref1 === void 0 ? void 0 : ref1._id}`);
-    const data = await (res === null || res === void 0 ? void 0 : res.json());
-    console.log("profileData", data, "data");
-    // fetch appearance data for meta tags
-    const appearanceData = await fetch(`${baseurl}RecruiterV2/Profile/GET/GetAppearanceSettings?agency_id=${profileData === null || profileData === void 0 ? void 0 : (ref2 = profileData.result) === null || ref2 === void 0 ? void 0 : ref2._id}`).then((res)=>res.json());
-    // if no profile data is found for given site name
-    // then redirect to 404 page
-    if (profileData === null || profileData === void 0 ? void 0 : profileData.message) {
-        return {
-            notFound: true
-        };
-    }
-    return {
-        props: {
-            agencyId: (ref3 = profileData.result) === null || ref3 === void 0 ? void 0 : ref3._id,
-            data: data,
-            appearanceData: appearanceData,
-            time: new Date().toISOString()
-        }
-    };
-};
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"getStaticProps\": () => (/* binding */ getStaticProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst Test = ({ data , time  })=>{\n    const func = async ()=>{\n        const res = await fetch(`/api/revalidate/myagency?rxveohyjwptnzkb`);\n        console.log(res, \"console.log\", \"res\", data);\n    };\n    console.log(time, \"time data\", \"console.log\");\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: [\n            time + \"hello\",\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                onClick: ()=>func(),\n                children: \"revalidate\"\n            }, void 0, false, {\n                fileName: \"/Users/gulrezshaikh/Desktop/project-test/portfolio-test/portfolio-site/pages/test.js\",\n                lineNumber: 15,\n                columnNumber: 13\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/gulrezshaikh/Desktop/project-test/portfolio-test/portfolio-site/pages/test.js\",\n        lineNumber: 13,\n        columnNumber: 9\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Test);\n// export async function getStaticPaths() {\n//     const paths = [];\n//     return {\n//         paths: paths,\n//         fallback: \"blocking\",\n//     };\n// }\nconst getStaticProps = async (context)=>{\n    var ref, ref1, ref2, ref3, ref4, ref5;\n    let siteName = \"myagency\";\n    const baseurl = \"https://testapikube.lineupx.com/\";\n    // fetch profile information for given site name\n    const profileData = await fetch(`${baseurl}RecruiterV2/Profile/GET/GetAgencyByDomainName?site_name=${siteName}`).then((res)=>{\n        return res === null || res === void 0 ? void 0 : res.json();\n    });\n    // fetch pricing data for job board\n    let dev = (process === null || process === void 0 ? void 0 : (ref = process.env) === null || ref === void 0 ? void 0 : \"development\") === \"development\" ? \"http://localhost:5004\" : \"https://test.lineupx.com\";\n    const res = await fetch(dev + `/api/pricing/${(ref1 = profileData.result) === null || ref1 === void 0 ? void 0 : ref1._id}`);\n    const data = await (res === null || res === void 0 ? void 0 : res.json());\n    // fetch appearance data for meta tags\n    const appearanceData = await fetch(`${baseurl}RecruiterV2/Profile/GET/GetAppearanceSettings?agency_id=${profileData === null || profileData === void 0 ? void 0 : (ref2 = profileData.result) === null || ref2 === void 0 ? void 0 : ref2._id}`).then((res)=>res.json());\n    console.log(\"profileData\", \"data\", data.active_pricings, (ref3 = data.active_pricings) === null || ref3 === void 0 ? void 0 : ref3.length, (ref4 = profileData.result) === null || ref4 === void 0 ? void 0 : ref4._id);\n    // if no profile data is found for given site name\n    // then redirect to 404 page\n    if (profileData === null || profileData === void 0 ? void 0 : profileData.message) {\n        return {\n            notFound: true\n        };\n    }\n    return {\n        props: {\n            agencyId: (ref5 = profileData.result) === null || ref5 === void 0 ? void 0 : ref5._id,\n            data: data,\n            appearanceData: appearanceData,\n            time: new Date().toISOString()\n        }\n    };\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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QUFFLE1BQU0sRUFBRU4sSUFBSSxDQUFDd0IsZUFBZSxFQUFFeEIsQ0FBQUEsSUFBb0IsR0FBcEJBLElBQUksQ0FBQ3dCLGVBQWUsY0FBcEJ4QixJQUFvQixXQUFRLEdBQTVCQSxLQUFBQSxDQUE0QixHQUE1QkEsSUFBb0IsQ0FBRXlCLE1BQU0sRUFBRVosQ0FBQUEsSUFBa0IsR0FBbEJBLFdBQVcsQ0FBQ1EsTUFBTSxjQUFsQlIsSUFBa0IsV0FBSyxHQUF2QkEsS0FBQUEsQ0FBdUIsR0FBdkJBLElBQWtCLENBQUVTLEdBQUcsQ0FBQztJQUcvRyxrREFBa0Q7SUFDbEQsNEJBQTRCO0lBQzVCLElBQUlULFdBQVcsYUFBWEEsV0FBVyxXQUFTLEdBQXBCQSxLQUFBQSxDQUFvQixHQUFwQkEsV0FBVyxDQUFFYSxPQUFPLEVBQUU7UUFDdEIsT0FBTztZQUNIQyxRQUFRLEVBQUUsSUFBSTtTQUNqQixDQUFDO0lBQ04sQ0FBQztJQUVELE9BQU87UUFDSEMsS0FBSyxFQUFFO1lBQ0hDLFFBQVEsRUFBRWhCLENBQUFBLElBQWtCLEdBQWxCQSxXQUFXLENBQUNRLE1BQU0sY0FBbEJSLElBQWtCLFdBQUssR0FBdkJBLEtBQUFBLENBQXVCLEdBQXZCQSxJQUFrQixDQUFFUyxHQUFHO1lBQ2pDdEIsSUFBSSxFQUFFQSxJQUFJO1lBQ1Z1QixjQUFjLEVBQUVBLGNBQWM7WUFDOUJ0QixJQUFJLEVBQUUsSUFBSTZCLElBQUksRUFBRSxDQUFDQyxXQUFXLEVBQUU7U0FDakM7S0FFSixDQUFDO0FBQ04sQ0FBQyxDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcG9ydGZvbGlvLXNpdGUvLi9wYWdlcy90ZXN0LmpzP2QwOTkiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcblxuY29uc3QgVGVzdCA9ICh7IGRhdGEsIHRpbWUgfSkgPT4ge1xuXG4gICAgY29uc3QgZnVuYyA9IGFzeW5jICgpID0+IHtcbiAgICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goYC9hcGkvcmV2YWxpZGF0ZS9teWFnZW5jeT9yeHZlb2h5andwdG56a2JgKTtcblxuICAgICAgICBjb25zb2xlLmxvZyhyZXMsICdjb25zb2xlLmxvZycsICdyZXMnLCBkYXRhKVxuICAgIH1cblxuICAgIGNvbnNvbGUubG9nKHRpbWUsICd0aW1lIGRhdGEnLCAnY29uc29sZS5sb2cnKVxuICAgIHJldHVybiAoXG4gICAgICAgIDxkaXY+XG4gICAgICAgICAgICB7dGltZSArICdoZWxsbyd9XG4gICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9eygpID0+IGZ1bmMoKX0+cmV2YWxpZGF0ZTwvYnV0dG9uPlxuICAgICAgICA8L2Rpdj5cbiAgICApO1xufVxuXG5leHBvcnQgZGVmYXVsdCBUZXN0O1xuXG4vLyBleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0U3RhdGljUGF0aHMoKSB7XG4vLyAgICAgY29uc3QgcGF0aHMgPSBbXTtcbi8vICAgICByZXR1cm4ge1xuLy8gICAgICAgICBwYXRoczogcGF0aHMsXG4vLyAgICAgICAgIGZhbGxiYWNrOiBcImJsb2NraW5nXCIsXG4vLyAgICAgfTtcbi8vIH1cblxuXG5leHBvcnQgY29uc3QgZ2V0U3RhdGljUHJvcHMgPSBhc3luYyAoY29udGV4dCkgPT4ge1xuXG4gICAgbGV0IHNpdGVOYW1lID0gJ215YWdlbmN5JztcbiAgICBjb25zdCBiYXNldXJsID0gXCJodHRwczovL3Rlc3RhcGlrdWJlLmxpbmV1cHguY29tL1wiO1xuXG4gICAgLy8gZmV0Y2ggcHJvZmlsZSBpbmZvcm1hdGlvbiBmb3IgZ2l2ZW4gc2l0ZSBuYW1lXG4gICAgY29uc3QgcHJvZmlsZURhdGEgPSBhd2FpdCBmZXRjaChcbiAgICAgICAgYCR7YmFzZXVybH1SZWNydWl0ZXJWMi9Qcm9maWxlL0dFVC9HZXRBZ2VuY3lCeURvbWFpbk5hbWU/c2l0ZV9uYW1lPSR7c2l0ZU5hbWV9YFxuICAgICkudGhlbigocmVzKSA9PiByZXM/Lmpzb24oKSk7XG5cblxuXG5cbiAgICAvLyBmZXRjaCBwcmljaW5nIGRhdGEgZm9yIGpvYiBib2FyZFxuICAgIGxldCBkZXYgPSBwcm9jZXNzPy5lbnY/Lk5PREVfRU5WID09PSAnZGV2ZWxvcG1lbnQnID8gJ2h0dHA6Ly9sb2NhbGhvc3Q6NTAwNCcgOiAnaHR0cHM6Ly90ZXN0LmxpbmV1cHguY29tJ1xuXG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goZGV2ICsgYC9hcGkvcHJpY2luZy8ke3Byb2ZpbGVEYXRhLnJlc3VsdD8uX2lkfWApXG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcz8uanNvbigpO1xuXG5cblxuXG4gICAgLy8gZmV0Y2ggYXBwZWFyYW5jZSBkYXRhIGZvciBtZXRhIHRhZ3NcbiAgICBjb25zdCBhcHBlYXJhbmNlRGF0YSA9IGF3YWl0IGZldGNoKFxuICAgICAgICBgJHtiYXNldXJsfVJlY3J1aXRlclYyL1Byb2ZpbGUvR0VUL0dldEFwcGVhcmFuY2VTZXR0aW5ncz9hZ2VuY3lfaWQ9JHtwcm9maWxlRGF0YT8ucmVzdWx0Py5faWR9YFxuICAgICkudGhlbigocmVzKSA9PiByZXMuanNvbigpKTtcblxuICAgIGNvbnNvbGUubG9nKCdwcm9maWxlRGF0YScsICdkYXRhJywgZGF0YS5hY3RpdmVfcHJpY2luZ3MsIGRhdGEuYWN0aXZlX3ByaWNpbmdzPy5sZW5ndGgsIHByb2ZpbGVEYXRhLnJlc3VsdD8uX2lkKVxuXG5cbiAgICAvLyBpZiBubyBwcm9maWxlIGRhdGEgaXMgZm91bmQgZm9yIGdpdmVuIHNpdGUgbmFtZVxuICAgIC8vIHRoZW4gcmVkaXJlY3QgdG8gNDA0IHBhZ2VcbiAgICBpZiAocHJvZmlsZURhdGE/Lm1lc3NhZ2UpIHtcbiAgICAgICAgcmV0dXJuIHtcbiAgICAgICAgICAgIG5vdEZvdW5kOiB0cnVlLFxuICAgICAgICB9O1xuICAgIH1cblxuICAgIHJldHVybiB7XG4gICAgICAgIHByb3BzOiB7XG4gICAgICAgICAgICBhZ2VuY3lJZDogcHJvZmlsZURhdGEucmVzdWx0Py5faWQsXG4gICAgICAgICAgICBkYXRhOiBkYXRhLFxuICAgICAgICAgICAgYXBwZWFyYW5jZURhdGE6IGFwcGVhcmFuY2VEYXRhLFxuICAgICAgICAgICAgdGltZTogbmV3IERhdGUoKS50b0lTT1N0cmluZygpLFxuICAgICAgICB9LFxuICAgICAgICAvLyByZXZhbGlkYXRlOiA4NjQwMCxcbiAgICB9O1xufTsiXSwibmFtZXMiOlsiUmVhY3QiLCJUZXN0IiwiZGF0YSIsInRpbWUiLCJmdW5jIiwicmVzIiwiZmV0Y2giLCJjb25zb2xlIiwibG9nIiwiZGl2IiwiYnV0dG9uIiwib25DbGljayIsImdldFN0YXRpY1Byb3BzIiwiY29udGV4dCIsInByb2Nlc3MiLCJwcm9maWxlRGF0YSIsInNpdGVOYW1lIiwiYmFzZXVybCIsInRoZW4iLCJqc29uIiwiZGV2IiwiZW52IiwiTk9ERV9FTlYiLCJyZXN1bHQiLCJfaWQiLCJhcHBlYXJhbmNlRGF0YSIsImFjdGl2ZV9wcmljaW5ncyIsImxlbmd0aCIsIm1lc3NhZ2UiLCJub3RGb3VuZCIsInByb3BzIiwiYWdlbmN5SWQiLCJEYXRlIiwidG9JU09TdHJpbmciXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/test.js\n");
 
 /***/ }),
 
-/***/ 689:
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
 /***/ ((module) => {
 
 module.exports = require("react");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
 /***/ ((module) => {
 
-module.exports = require("react/jsx-runtime");
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ })
 
@@ -99,7 +50,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(344));
+var __webpack_exports__ = (__webpack_exec__("./pages/test.js"));
 module.exports = __webpack_exports__;
 
 })();

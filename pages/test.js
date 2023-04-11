@@ -47,7 +47,6 @@ export const getStaticProps = async (context) => {
     const res = await fetch(dev + `/api/pricing/${profileData.result?._id}`)
     const data = await res?.json();
 
-    console.log('profileData', data, 'data')
 
 
 
@@ -55,6 +54,9 @@ export const getStaticProps = async (context) => {
     const appearanceData = await fetch(
         `${baseurl}RecruiterV2/Profile/GET/GetAppearanceSettings?agency_id=${profileData?.result?._id}`
     ).then((res) => res.json());
+
+    console.log('profileData', 'data', data.active_pricings, data.active_pricings?.length, profileData.result?._id)
+
 
     // if no profile data is found for given site name
     // then redirect to 404 page
