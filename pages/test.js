@@ -5,10 +5,9 @@ const Test = ({ data, time }) => {
     const func = async () => {
         const res = await fetch(`/api/revalidate/myagency?rxveohyjwptnzkb`);
 
-        console.log(res, 'console.log', 'res', data)
+        console.log(res, 'console.log', 'res')
     }
 
-    console.log(time, 'time data', 'console.log')
     return (
         <div>
             {time + 'hello'}
@@ -55,7 +54,7 @@ export const getStaticProps = async (context) => {
         `${baseurl}RecruiterV2/Profile/GET/GetAppearanceSettings?agency_id=${profileData?.result?._id}`
     ).then((res) => res.json());
 
-    console.log('profileData', 'data', data.active_pricings, data.active_pricings?.length, profileData.result?._id)
+    console.log('profileData', data.active_pricings, data.active_pricings?.length, profileData.result?._id)
 
 
     // if no profile data is found for given site name
