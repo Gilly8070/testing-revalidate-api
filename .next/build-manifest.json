@@ -1,0 +1,61 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/N6usKrUuYB3N_qi0uymgq/_buildManifest.js",
+    "static/N6usKrUuYB3N_qi0uymgq/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-a3fad4d1aeed3d5b.js",
+      "static/chunks/pages/index-fe3b157eb7ecee81.js"
+    ],
+    "/About": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-a3fad4d1aeed3d5b.js",
+      "static/chunks/pages/About-717084b88d4dea09.js"
+    ],
+    "/Contact": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-a3fad4d1aeed3d5b.js",
+      "static/chunks/187-8e32a8c471eb4712.js",
+      "static/chunks/pages/Contact-d9515898263aa563.js"
+    ],
+    "/HomePage": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-a3fad4d1aeed3d5b.js",
+      "static/chunks/1bfc9850-e645484e1040f3af.js",
+      "static/chunks/0c428ae2-26fb60a3cb83d0a1.js",
+      "static/chunks/981-43159b6d56f3e9fd.js",
+      "static/chunks/pages/HomePage-36ca8d67d447fbf3.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-a3fad4d1aeed3d5b.js",
+      "static/chunks/pages/_app-dc14f8483464b560.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-a3fad4d1aeed3d5b.js",
+      "static/chunks/pages/_error-942918685354aae9.js"
+    ],
+    "/test": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-a3fad4d1aeed3d5b.js",
+      "static/chunks/pages/test-099c119fa3953f04.js"
+    ]
+  },
+  "ampFirstPages": []
+}
